@@ -25,3 +25,8 @@ class MoveResponse(BaseModel):
     black_count: int
     white_count: int
     message: str
+
+class AIMoveRequest(BaseModel):
+    cells: List[Disk]
+    current_player: Player
+    size: int
